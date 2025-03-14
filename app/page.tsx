@@ -32,7 +32,7 @@ const services = [
     icon: "/images/s_1.png",
     title: "Appointment Scheduling",
     description:
-      "Schedule, reschedule, and manage appointments easily. Denteex's intuitive interface allows patients to book their appointments online, improving your clinic's workflow and reducing administrative effort.",
+      "Schedule, reschedule, and manage appointments easily. Denteex intuitive interface allows patients to book their appointments online, improving your clinics workflow and reducing administrative effort.",
   },
   {
     icon: "/images/s_5.png",
@@ -57,7 +57,7 @@ const services = [
     icon: "/images/s_2.png",
     title: "Secure Data Storage",
     description:
-      "We prioritize patient privacy with secure cloud storage, adhering to data protection regulations. Your patients' data is encrypted and safely stored.",
+      "We prioritize patient privacy with secure cloud storage, adhering to data protection regulations. Your patients data is encrypted and safely stored.",
   },
 ];
 
@@ -478,7 +478,7 @@ export default function Home() {
               Ready to Launch Your Next Big Idea?
               <br />
               <span className="text-white text-3xl sm:text-4xl font-semibold mt-2 block">
-                Let's Elevate Your Business Together!
+                Lets Elevate Your Business Together!
               </span>
             </h1>
 
