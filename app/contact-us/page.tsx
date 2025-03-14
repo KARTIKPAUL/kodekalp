@@ -1,137 +1,213 @@
-import { BlurFadeDemo } from "@/components/demos/blur-fade-demo";
-import Footer from "@/components/footer";
-import WordFadeIn from "@/components/magicui/word-fade-in";
-import ShowcaseNavbar from "@/components/showcase-navbar";
-import { FaFacebookSquare , FaInstagramSquare, FaLinkedinIn } from "react-icons/fa";
-import React from "react";
+"use client";
 import Link from "next/link";
+import React from "react";
+import Globe from "../../components/Style/globe"
+
+import {
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+  FaYoutube,
+} from "react-icons/fa";
 
 const ContactUs = () => {
   return (
-    // <div className="relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-200 text-gray-700">
-    <div >
-    {/* Navbar */}
-      {/* <ShowcaseNavbar /> */}
-
-      {/* Main Content */}
-      <div className="mt-7 md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto">
-        {/* Assistance Section */}
-        <header className="py-16 px-6">
-            <div className="container mx-auto text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              We’re Here to Help!
-              </h1>
-              <p className="text-lg md:text-xl mx-auto my-5">
-              At Denteex, we value your time and are committed to providing prompt and effective assistance. Whether you have questions about our software, need support, or want to learn more about how Denteex can transform your dental practice, our team is here for you.
-              </p>
-            </div>
+    <>
+      {/* Contact Details Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-blue-50">
+        <header className="px-6 mb-16">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Connect With Us
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              At Kodekalp, we value your time and are committed to providing
+              prompt and effective assistance. Let us help you transform your
+              software practice with our innovative solutions.
+            </p>
+          </div>
         </header>
+        
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Contact Information */}
+            <div className="bg-white shadow-xl p-8 rounded-2xl border border-blue-50 hover:shadow-2xl transition-shadow">
+              <h2 className="text-3xl font-bold text-blue-900 mb-6">
+                Get in Touch
+              </h2>
+              
+              <div className="space-y-8">
 
-        {/* Contact Details */}
-        <section className="mt-10 space-y-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Customer Support */}
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Customer Support</h3>
-              <p>📧 <a href="mailto:support@denteex.com" className="text-blue-500">support@denteex.com</a></p>
-              <p>📞 Phone: +91-63627 20677</p>
-              <p>💬 Live Chat: Available 24/7 on our website</p>
-            </div>
-            {/* Sales and Inquiries */}
-            <div>
-              <h3 className="text-xl font-semibold mb-2">Sales and Inquiries</h3>
-              <p>📧 <a href="mailto:sales@denteex.com" className="text-blue-500">sales@denteex.com</a></p>
-            </div>
-          </div>
-        </section>
-
-        {/* Address Section */}
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Visit Us</h2>
-          <p>KodeKalp Global Technologies,</p>
-          <p>near Chhatrapati Sambhaji Chowk,</p>
-          <p>Fulchur Peth, Fulchur Tola, Gondia, Maharashtra 441601</p>
-
-          <div className="mt-6">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.888072482446!2d80.20470987526784!3d21.43364398031893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b474e1d4b6dbed3%3A0xe46563c2448277ed!2sKodeKalp%20Global%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1732197249981!5m2!1sen!2sin"
-              width="100%"
-              height="400"
-              className="rounded-lg shadow-lg"
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </section>
-
-        {/* Contact Form */}
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Contact Form</h2>
-          <form className="bg-white shadow-md rounded-lg p-6 space-y-6">
-            <div>
-              <label className="block text-sm font-medium mb-2">Name</label>
-              <input
-                type="text"
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Email</label>
-              <input
-                type="email"
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Phone</label>
-              <input
-                type="tel"
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-2">Message</label>
-              <textarea
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500"
                 
-                required
-              ></textarea>
+                
+
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-blue-100 rounded-lg">
+                    <FaPhoneAlt className="text-blue-600 text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
+                    <p className="text-gray-600">+91 6362 720 677</p>
+                    <p className="text-sm text-gray-500 mt-1">Mon - Sun | 9:00 AM - 7:00 PM</p>
+                  </div>
+                </div>
+
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-blue-100 rounded-lg">
+                    <FaMapMarkerAlt className="text-blue-600 text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800">Office</h3>
+                    <p className="text-gray-600">KodeKalp Global Technologies</p>
+                    <p className="text-sm text-gray-500 mt-1">
+                      Near Chhatrapati Sambhaji Chowk, Fulchur, Gondia-441601
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="p-3 bg-blue-100 rounded-lg">
+                    <FaEnvelope className="text-blue-600 text-xl" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-800">Email</h3>
+                    <a
+                      href="mailto:info@kodekalp.com"
+                      className="text-blue-600 hover:text-blue-800 transition-colors"
+                    >
+                      info@kodekalp.com
+                    </a>
+                    <p className="text-sm text-gray-500 mt-1">Typically replies within 24 hours</p>
+                  </div>
+                </div>
+
+
+
+                
+
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-gray-100">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">Follow Us</h3>
+                <div className="flex gap-4 text-2xl">
+                  <a
+                    href="https://www.instagram.com/kodekalp_global_technologies/"
+                    className="text-pink-600 hover:text-pink-700 transition-colors"
+                  >
+                    <FaInstagram />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/kodekalp/"
+                    className="text-blue-700 hover:text-blue-900 transition-colors"
+                  >
+                    <FaLinkedin />
+                  </a>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=916362720677"
+                    className="text-green-600 hover:text-green-700 transition-colors"
+                  >
+                    <FaWhatsapp />
+                  </a>
+                  <a
+                    href="https://www.youtube.com/@KodeKalpGlobalTechnologies"
+                    className="text-red-600 hover:text-red-700 transition-colors"
+                  >
+                    <FaYoutube />
+                  </a>
+                </div>
+              </div>
+
+              
             </div>
-            <button
-              type="submit"
-              className="w-full bg-black text-white py-3 rounded-lg transition duration-200"
-            >
-              Submit
-            </button>
-          </form>
-        </section>
 
-        {/* Follow Us */}
-        <div className="my-10 flex justify-center">
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold text-black mb-4">Follow Us</h2>
-          <ul className="flex space-x-6">
-            <li>
-              <Link href="https://www.linkedin.com/company/denteex" className="hover:underline hover:text-blue-500 duration-200 text-blue-600 w-10 h-10"> <FaFacebookSquare/> </Link>
-            </li>
-            <li>
-              <Link href="https://www.facebook.com/denteex" className="hover:underline hover:text-orange-600 duration-200 text-orange-700"> <FaInstagramSquare/> </Link>
-            </li>
-            <li>
-              <Link href="https://www.instagram.com/denteexindia" className="hover:underline hover:text-blue-600 duration-200 text-blue-500"> < FaLinkedinIn/> </Link>
-            </li>
-          </ul>
-        </section>
+            {/* Contact Form */}
+            <div className="bg-white shadow-xl p-8 rounded-2xl border border-blue-50">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold text-blue-900 mb-2">
+                  Send a Message
+                </h2>
+                <p className="text-gray-600">
+                  Have questions? We're here to help! Reach out anytime.
+                </p>
+              </div>
+
+              <div className="mb-8">
+                <Link
+                  href="https://calendly.com/kodekalp/get-connect-with-kodekalp"
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-4 rounded-full inline-flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg w-full justify-center"
+                >
+                  Schedule a Free Consultation
+                </Link>
+              </div>
+
+              <div className="flex items-center my-8">
+                <div className="flex-1 border-t border-gray-200"></div>
+                <span className="px-4 text-gray-500 text-sm">OR</span>
+                <div className="flex-1 border-t border-gray-200"></div>
+              </div>
+
+              <form className="space-y-6">
+                <div>
+                  <label className="block text-gray-700 mb-2 font-medium">Full Name</label>
+                  <input
+                    type="text"
+                    placeholder="John Doe"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    required
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-gray-700 mb-2 font-medium">Email</label>
+                    <input
+                      type="email"
+                      placeholder="john@company.com"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      required
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-gray-700 mb-2 font-medium">Phone</label>
+                    <input
+                      type="tel"
+                      placeholder="+91 12345 67890"
+                      className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-gray-700 mb-2 font-medium">Message</label>
+                  <textarea
+                    rows="4"
+                    placeholder="How can we help you?"
+                    className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-all transform hover:scale-[1.02] shadow-md"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      {/* Footer */}
       
-    </div>
+      
+    </>
   );
 };
 

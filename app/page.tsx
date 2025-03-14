@@ -24,21 +24,21 @@ import { Testimonial } from "./testimonials/page";
 const services = [
   {
     icon: "/images/s_6.png",
-    title: "Customizable Patient Management",
+    title: "Web Design & Development",
     description:
-      "Denteex provides a centralized system to manage and access patient information efficiently. Customizable fields allow you to adapt the system according to your clinic’s needs.",
+      "We offer comprehensive website solutions, including in-depth website audits to identify areas for improvement and enhance performance. Our web design and development services focus on creating visually appealing, user-friendly websites tailored to your brand.",
   },
   {
     icon: "/images/s_1.png",
-    title: "Appointment Scheduling",
+    title: "Digital Marketing",
     description:
-      "Schedule, reschedule, and manage appointments easily. Denteex intuitive interface allows patients to book their appointments online, improving your clinics workflow and reducing administrative effort.",
+      "We provide a full range of digital marketing services to help businesses grow their online presence. Our social media marketing and social media handling services ensure your brand stays active and engaging across platforms, building strong connections with your audience.",
   },
   {
     icon: "/images/s_5.png",
-    title: "Automated Reminders",
+    title: "App Development",
     description:
-      "Send automated reminders via email, SMS, or WhatsApp to patients. Reduce no-shows and improve appointment attendance with minimal effort.",
+      "We offer end-to-end Android & iOS application solutions, from app design and development to seamless testing and deployment. Our team specializes in custom app design, ensuring your app aligns with your brand identity and user needs. With expert UI/UX consulting.",
   },
   {
     icon: "/images/s_3.png",
@@ -49,9 +49,9 @@ const services = [
   },
   {
     icon: "/images/s_4.png",
-    title: "Multi-Device Accessibility",
+    title: "IoT Devices",
     description:
-      "Denteex is cloud-based, ensuring you can manage your practice from any device—be it on your desktop at the clinic or mobile on the go.",
+      "We provide end-to-end IoT consultation and project management, guiding businesses through the complexities of connected solutions. Our expertise in custom IoT solution development ensures tailored systems that meet specific industry needs.",
   },
   {
     icon: "/images/s_2.png",
@@ -427,10 +427,10 @@ export default function Home() {
       <section>
         <main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20 xl:w-4/5 2xl:w-[68%] mx-auto px-6 md:px-0">
           <Image
-            src={"/logo/black-logo.png"}
+            src={"/logo/logoMain.png"}
             width={10000}
             height={10000}
-            className=" md:w-1/3 rounded-md"
+            className=" md:w-1/3 rounded-md bg-black"
             alt="image"
           />
           <div className="flex flex-col gap-y-5 md:w-1/2">

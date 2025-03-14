@@ -34,19 +34,19 @@ const Header = () => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex gap-x-10 items-cente font-medium text-lg text-white">
-        <Link href={"/"} className="hover:text-blue-500">
+        <Link href={"/"} className="hover:text-[#2482d0]">
           Home
         </Link>
-        <Link href={"/about-us"} className="hover:text-blue-500">
+        <Link href={"/about-us"} className="hover:text-[#2482d0]">
           About
         </Link>
-        <Link href={"/services"} className="hover:text-blue-500">
+        <Link href={"/services"} className="hover:text-[#2482d0]">
           Services
         </Link>
-        <Link href={"/blog-page"} className="hover:text-blue-500">
+        <Link href={"/blog-page"} className="hover:text-[#2482d0]">
           Blog
         </Link>
-        <Link href={"/contact-us"} className="hover:text-blue-500">
+        <Link href={"/contact-us"} className="hover:text-[#2482d0]">
           Connect
         </Link>
         {/* <Link href={"/meeting"} className="hover:text-blue-500">
