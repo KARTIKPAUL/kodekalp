@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import Globe from "../../components/Style/globe"
+import Globe from "../../components/Style/globe";
 
 import {
   FaPhoneAlt,
@@ -30,7 +30,7 @@ const ContactUs = () => {
             </p>
           </div>
         </header>
-        
+
         <div className="container mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Information */}
@@ -38,32 +38,34 @@ const ContactUs = () => {
               <h2 className="text-3xl font-bold text-blue-900 mb-6">
                 Get in Touch
               </h2>
-              
+
               <div className="space-y-8">
-
-                
-                
-
-
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg">
                     <FaPhoneAlt className="text-blue-600 text-xl" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      Phone
+                    </h3>
                     <p className="text-gray-600">+91 6362 720 677</p>
-                    <p className="text-sm text-gray-500 mt-1">Mon - Sun | 9:00 AM - 7:00 PM</p>
+                    <p className="text-sm text-gray-500 mt-1">
+                      Mon - Sun | 9:00 AM - 7:00 PM
+                    </p>
                   </div>
                 </div>
-
 
                 <div className="flex items-start gap-4">
                   <div className="p-3 bg-blue-100 rounded-lg">
                     <FaMapMarkerAlt className="text-blue-600 text-xl" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">Office</h3>
-                    <p className="text-gray-600">KodeKalp Global Technologies</p>
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      Office
+                    </h3>
+                    <p className="text-gray-600">
+                      KodeKalp Global Technologies
+                    </p>
                     <p className="text-sm text-gray-500 mt-1">
                       Near Chhatrapati Sambhaji Chowk, Fulchur, Gondia-441601
                     </p>
@@ -75,25 +77,26 @@ const ContactUs = () => {
                     <FaEnvelope className="text-blue-600 text-xl" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">Email</h3>
+                    <h3 className="text-lg font-semibold text-gray-800">
+                      Email
+                    </h3>
                     <a
                       href="mailto:info@kodekalp.com"
                       className="text-blue-600 hover:text-blue-800 transition-colors"
                     >
                       info@kodekalp.com
                     </a>
-                    <p className="text-sm text-gray-500 mt-1">Typically replies within 24 hours</p>
+                    <p className="text-sm text-gray-500 mt-1">
+                      Typically replies within 24 hours
+                    </p>
                   </div>
                 </div>
-
-
-
-                
-
               </div>
 
               <div className="mt-8 pt-6 border-t border-gray-100">
-                <h3 className="text-lg font-semibold text-gray-800 mb-4">Follow Us</h3>
+                <h3 className="text-lg font-semibold text-gray-800 mb-4">
+                  Follow Us
+                </h3>
                 <div className="flex gap-4 text-2xl">
                   <a
                     href="https://www.instagram.com/kodekalp_global_technologies/"
@@ -121,8 +124,6 @@ const ContactUs = () => {
                   </a>
                 </div>
               </div>
-
-              
             </div>
 
             {/* Contact Form */}
@@ -132,7 +133,7 @@ const ContactUs = () => {
                   Send a Message
                 </h2>
                 <p className="text-gray-600">
-                  Have questions? We're here to help! Reach out anytime.
+                  Have questions? We are here to help! Reach out anytime.
                 </p>
               </div>
 
@@ -153,7 +154,9 @@ const ContactUs = () => {
 
               <form className="space-y-6">
                 <div>
-                  <label className="block text-gray-700 mb-2 font-medium">Full Name</label>
+                  <label className="block text-gray-700 mb-2 font-medium">
+                    Full Name
+                  </label>
                   <input
                     type="text"
                     placeholder="John Doe"
@@ -164,7 +167,9 @@ const ContactUs = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-gray-700 mb-2 font-medium">Email</label>
+                    <label className="block text-gray-700 mb-2 font-medium">
+                      Email
+                    </label>
                     <input
                       type="email"
                       placeholder="john@company.com"
@@ -174,7 +179,9 @@ const ContactUs = () => {
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 mb-2 font-medium">Phone</label>
+                    <label className="block text-gray-700 mb-2 font-medium">
+                      Phone
+                    </label>
                     <input
                       type="tel"
                       placeholder="+91 12345 67890"
@@ -185,7 +192,9 @@ const ContactUs = () => {
                 </div>
 
                 <div>
-                  <label className="block text-gray-700 mb-2 font-medium">Message</label>
+                  <label className="block text-gray-700 mb-2 font-medium">
+                    Message
+                  </label>
                   <textarea
                     rows="4"
                     placeholder="How can we help you?"
@@ -204,9 +213,6 @@ const ContactUs = () => {
           </div>
         </div>
       </section>
-
-      
-      
     </>
   );
 };
